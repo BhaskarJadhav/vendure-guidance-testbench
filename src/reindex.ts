@@ -12,7 +12,6 @@ async function run() {
   console.log('Creating admin request context...');
   const ctx = await requestContextService.create({
     apiType: 'admin',
-    channel,
   });
 
   console.log('Triggering search index rebuild...');
