@@ -1,4 +1,4 @@
-import { InitialData, LanguageCode, Permission } from '@vendure/core';
+import { InitialData, LanguageCode } from '@vendure/core';
 
 export const initialData: InitialData = {
   paymentMethods: [
@@ -8,13 +8,6 @@ export const initialData: InitialData = {
         code: 'dummy-payment-handler',
         arguments: [{ name: 'automaticSettle', value: 'true' }],
       },
-    },
-  ],
-  roles: [
-    {
-      code: 'administrator',
-      description: 'Administrator',
-      permissions: [Permission.SuperAdmin],
     },
   ],
   defaultLanguage: LanguageCode.en,
