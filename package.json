@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "populate": "ts-node src/populate.ts"
+    "populate": "ts-node src/populate.ts",
+    "reindex": "ts-node src/reindex.ts"
   },
   "dependencies": {
     "@vendure/core": "^3.0.4",
