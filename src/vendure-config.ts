@@ -16,7 +16,7 @@ const IS_DEV = process.env.APP_ENV === 'dev' || process.env.NODE_ENV !== 'produc
 export const config: VendureConfig = {
   apiOptions: {
     port: parseInt(process.env.PORT || '3000'),
-    apiPath: 'shop-api',
+    shopApiPath: 'shop-api',
     adminApiPath: 'admin-api',
     // In development, allow playground for testing
     ...(IS_DEV ? {
