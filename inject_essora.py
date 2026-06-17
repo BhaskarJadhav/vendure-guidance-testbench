@@ -13,7 +13,7 @@ with open(index_path, 'r', encoding='utf-8') as f:
 essora_script = """
 <!-- Essora AI SDK Integration -->
 <script src="https://unpkg.com/livekit-client/dist/livekit-client.umd.js"></script>
-<script src="https://essora-backend-api-193009628373.asia-south1.run.app/static/essora-sdk.js"></script>
+<script src="https://essora-backend-api-193009628373.asia-south1.run.app/essora-sdk.js"></script>
 <script>
   (function() {
     function initEssora() {
