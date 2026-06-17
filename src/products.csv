@@ -1,4 +1,4 @@
-name,slug,description,assets,facets,optionGroups,options,sku,price,taxCategory,variantAssets,variantFacets
+name,slug,description,assets,facets,optionGroups,optionValues,sku,price,taxCategory,variantAssets,variantFacets
 "Gaming Laptop","gaming-laptop","High performance laptop",,"category:Electronics",,,LAP-001,129900,Standard Tax,,
 "UltraWide Monitor","ultrawide-monitor","34 inch monitor",,"category:Electronics",,,MON-001,49900,Standard Tax,,
 "Smart Refrigerator","smart-refrigerator","Keep food fresh",,"category:Appliances",,,REF-001,159900,Standard Tax,,
