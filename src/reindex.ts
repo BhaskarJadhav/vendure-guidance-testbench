@@ -3,7 +3,10 @@ import { config } from './vendure-config';
 
 async function run() {
   console.log('Bootstrapping Vendure for search reindexing...');
-  const app = await bootstrap(config);
+  const app = await bootstrap({
+    ...config,
+    port: 3001,
+  });
   const searchService = app.get(SearchService);
   const requestContextService = app.get(RequestContextService);
   const channelService = app.get(ChannelService);
