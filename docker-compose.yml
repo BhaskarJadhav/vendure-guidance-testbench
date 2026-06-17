@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: vendure-db
+    environment:
+      POSTGRES_DB: vendure
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  vendure:
+    build: .
+    container_name: vendure-server
+    ports:
+      - "3000:3000"
+      - "5001:5001"
+    environment:
+      APP_ENV: dev
+      PORT: 3000
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: vendure
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      SUPERADMIN_USERNAME: superadmin
+      SUPERADMIN_PASSWORD: superadmin
+      COOKIE_SECRET: cookie-secret-12345678
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - vendure_assets:/static/assets
+
+volumes:
+  postgres_data:
+  vendure_assets:

@@ -1,0 +1,23 @@
+{
+  "name": "vendure-guidance-testbench",
+  "version": "3.0.0",
+  "description": "Vendure testbench for Guidance SDK verification",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "populate": "ts-node src/populate.ts"
+  },
+  "dependencies": {
+    "@vendure/core": "^3.0.4",
+    "@vendure/admin-ui-plugin": "^3.0.4",
+    "@vendure/asset-server-plugin": "^3.0.4",
+    "dotenv": "^16.4.5",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,7 @@
+name,slug,description,assets,facets,optionGroups,options,sku,price,taxCategory,variantAssets,variantFacets
+"Gaming Laptop","gaming-laptop","High performance laptop",,"category:Electronics",,,LAP-001,129900,Standard Tax,,
+"UltraWide Monitor","ultrawide-monitor","34 inch monitor",,"category:Electronics",,,MON-001,49900,Standard Tax,,
+"Smart Refrigerator","smart-refrigerator","Keep food fresh",,"category:Appliances",,,REF-001,159900,Standard Tax,,
+"Microwave Oven","microwave-oven","Heats food fast",,"category:Appliances",,,MIC-001,14900,Standard Tax,,
+"Ergonomic Chair","ergonomic-chair","Comfortable office chair",,"category:Furniture",,,CHA-001,24900,Standard Tax,,
+"Standing Desk","standing-desk","Adjustable standing desk",,"category:Furniture",,,DES-001,39900,Standard Tax,,
