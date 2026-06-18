@@ -43,8 +43,8 @@ This testbench was created to serve as a production-grade playground for real-ti
     ```javascript
     Essora.init({
       serverUrl: "https://essora-backend-api-193009628373.asia-south1.run.app",
-      livekitUrl: "wss://essora-ai-june-3gghj1x0.livekit.cloud",
-      apiKey: "pk_d767b78a9b1a22bb50dc179f8c12dc2d",
+      livekitUrl: "wss://eassora-ai-june-bctpwpn4.livekit.cloud",
+      apiKey: "pk_62af599c2284eaa74b746d0b999927b7",
       user: {
         id: "vendure-admin",
         email: "superadmin@vendure.io",
